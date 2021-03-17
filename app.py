@@ -13,10 +13,10 @@ st.write('hello 👋')
 date = st.date_input('date', datetime.date(2019, 7, 6))
 time= st.time_input('time', datetime.time(8, 45))
 date_time = f"{date} {time}UTC"
-pickup_longitude = st.number_input('pickup longitude', 0)
-pickup_latitude = st.number_input("pickup latitude", 0)
-dropoff_longitude = st.number_input("dropoff longitude", 0)
-dropoff_latitude = st.number_input("dropoff latitude", 0)
+pickup_longitude = st.number_input('pickup longitude', value=40.7614327)
+pickup_latitude = st.number_input("pickup latitude",value=-73.9798156)
+dropoff_longitude = st.number_input("dropoff longitude", value=40.6413111)
+dropoff_latitude = st.number_input("dropoff latitude", value=-73.7803331)
 passenger_count = st.number_input("passenger_count", 0)
 
 
