@@ -7,7 +7,7 @@ import requests
 
 st.write('hello 👋')
 '''
-# TaxiFareModel front
+# TaxiFareModel
 '''
 
 date = st.date_input('date', datetime.date(2019, 7, 6))
@@ -36,8 +36,6 @@ result = requests.get(url, params=params)
 #st.write(result.headers)
 #predict = result[0]
 json = result.json()
-st.write('The fare will be', json['prediction'], '$')
-
-
-
+price = round(json['prediction'], 2)
+st.write('The fare will be', price, '$')
 

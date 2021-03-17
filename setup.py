@@ -10,4 +10,3 @@ setup(name="TaxiFareWebsite",
       packages=find_packages(),
       include_package_data=True,  # includes in package files from MANIFEST.in
       install_requires=requirements)
-
